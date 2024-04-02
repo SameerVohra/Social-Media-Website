@@ -9,7 +9,7 @@ import conf from "./conf/conf.js";
 function App() {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
-
+  console.log(conf.tinyMceAPIkey);
   useEffect(() => {
     authService
       .getCurrentUser()
